@@ -1,0 +1,11 @@
+git  init = iniciar repositorio git en la carpeta actual
+git status = ver el estado del repositorio. ******Es recomendable usarlo antes de cada cambio.********
+git add nombre_archivo = agregar archivo al staging, está en memoria pero no confirmado
+git add . = lo mismo que el anterior, pero agrega todos los archivos de la carpeta actual
+git commit -m "comentario" = confirma los cambios que están en staging y les deja ese comentario
+git commit = abre el editor de linux "bi" y se debe agregar un comentario en la primera linea y luego se confirman los cambios con ESC + SHIFT + Z Z (dos veces Z)
+git log = muestra los metadatos de los commit que se han hecho.
+git log nombre_archivo = lo mismo que el anterior pero de un archivo
+git show nombre_archivo = muestra los cambios del archivo anterior y el nuevo
+git diff id_commit1 id_commit2 = muestra las diferencias de 2 veriones de un mismo archivo (los id_commit aparecen con el comando git log nombre_archivo)
+git reset id_commit --hard = deja el repositorio como se encontraba en la versión del id_commit
