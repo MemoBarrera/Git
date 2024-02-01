@@ -6,6 +6,7 @@ git commit -m "comentario" = confirma los cambios que están en staging y les de
 git commit = abre el editor de linux "bi" y se debe agregar un comentario en la primera linea y luego se confirman los cambios con ESC + SHIFT + Z Z (dos veces Z)
 git log = muestra los metadatos de los commit que se han hecho.
 git log nombre_archivo = lo mismo que el anterior pero de un archivo
+git log --stat = muestra un resumen de todos los cambios
 git show nombre_archivo = muestra los cambios del archivo anterior y el nuevo
 git diff id_commit1 id_commit2 = muestra las diferencias de 2 veriones de un mismo archivo (los id_commit aparecen con el comando git log nombre_archivo)
 git diff = muestra las diferencias de staging con lo que está confirmado en disco
