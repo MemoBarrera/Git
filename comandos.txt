@@ -8,4 +8,5 @@ git log = muestra los metadatos de los commit que se han hecho.
 git log nombre_archivo = lo mismo que el anterior pero de un archivo
 git show nombre_archivo = muestra los cambios del archivo anterior y el nuevo
 git diff id_commit1 id_commit2 = muestra las diferencias de 2 veriones de un mismo archivo (los id_commit aparecen con el comando git log nombre_archivo)
+git diff = muestra las diferencias de staging con lo que está confirmado en disco
 git reset id_commit --hard = deja el repositorio como se encontraba en la versión del id_commit
