@@ -3,11 +3,11 @@ body
     text-align: center;
     margin: 2px;
     padding: 2px;
+    font-family: 'Arial';
 }
 #container
 {
-    background-color: aquamarine;
-    font-family: 'Franklin Gothic Medium';
+    background-color: aquamarine;    
     text-align: center;
     border: 1px solid #000;
     margin: 0 auto;
