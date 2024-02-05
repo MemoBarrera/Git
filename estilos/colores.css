@@ -7,9 +7,16 @@ body
 }
 #container
 {
-    background-color: aquamarine;    
+    width: 70%;
+    background-color: aquamarine;
     text-align: center;
     border: 1px solid #000;
     margin: 0 auto;
     padding: 1em;
+}
+
+#cabecera
+{
+    text-align: left;
+    font-size: large;
 }
