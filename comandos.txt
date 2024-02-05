@@ -19,3 +19,5 @@ git reset --hard = Deshace todo, absolutamente todo. Toda la información de los
 git reset --mixed = Borra todo, exactamente todo. Toda la información de los commits y del área de staging se elimina del historial.
 git reset HEAD = El comando git reset saca archivos del área de staging sin borrarlos ni realizar otras acciones. Esto impide que los últimos cambios en estos archivos se envíen al último commit. Podemos incluirlos de nuevo en staging con git add si cambiamos de opinión.
 git push = Mandar cambios a un servidor remoto
+git branch = muestra las ramas creadas y donde está actualmente.
+git merge = realiza la fusión de 2 ramas. en las 2 ramas deben estar todos los cambios en commit, de lo contrarrio se perderán los cambios.
