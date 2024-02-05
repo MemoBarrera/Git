@@ -24,4 +24,11 @@ git merge nombre_branch = realiza la fusión de 2 ramas. en las 2 ramas deben es
 git branch nombre_branch = sirve para crear una nueva rama.
 -------crear llave pública y privada ------
 Estando en el home es decir en "CD" debe estar git config --global user.email "guillermof.barrerao@gmail.com" y luego
-se escribe lo siguiente "ssh-keygen -t rsa -b 4096 -C "guillermof.barrerao@gmail.com" y luego pedirá donde guardarla y una contraseña y ya. Luego se verifica que el servicio esté corriendo con "eval $(ssh-agent -s) y aparecerá un número, después vamos a colocar el siguiente comando para agregar nuestra llave privada a nuestro ordenador con "ssh-add ~/.ssh/id_rsa" luego de esto se agrega la llave a git 
+se escribe lo siguiente "ssh-keygen -t rsa -b 4096 -C "guillermof.barrerao@gmail.com" y luego pedirá donde guardarla y una contraseña y ya. Luego se verifica que el servicio esté corriendo con "eval $(ssh-agent -s) y aparecerá un número, después vamos a colocar el siguiente comando para agregar nuestra llave privada a nuestro ordenador con "ssh-add ~/.ssh/id_rsa" luego de esto se agrega la llave a git
+--------------------------------------------
+git branch -m main = renombrar la rama master por main.
+git remote add origin ruta_ssh_de_github = esto sirve para conectar la el repositorio remoto a nuestro entorno local con el nombre origin.
+git remote -v = para ver las conexiones remotas.
+git push origin main = sirve para colocar lo que está en main en el origen (repositorio remoto), pero primero se debe hacer un fetch o pull
+git pull origin main = para traer el repositorio creado en github a la rama main de nuestro entorno local.
+git pull origin main --allow-unrelated-histories = permite hacer lo anterior forzando a mezclar las historias de los repositorios.
