@@ -22,3 +22,6 @@ git push = Mandar cambios a un servidor remoto.
 git branch = muestra las ramas creadas y donde está actualmente.
 git merge nombre_branch = realiza la fusión de 2 ramas. en las 2 ramas deben estar todos los cambios en commit, de lo contrarrio se perderán los cambios.
 git branch nombre_branch = sirve para crear una nueva rama.
+-------crear llave pública y privada ------
+Estando en el home es decir en "CD" debe estar git config --global user.email "guillermof.barrerao@gmail.com" y luego
+se escribe lo siguiente "ssh-keygen -t rsa -b 4096 -C "guillermof.barrerao@gmail.com" y luego pedirá donde guardarla y una contraseña y ya. Luego se verifica que el servicio esté corriendo con "eval $(ssh-agent -s) y aparecerá un número, después vamos a colocar el siguiente comando para agregar nuestra llave privada a nuestro ordenador con "ssh-add ~/.ssh/id_rsa" luego de esto se agrega la llave a git 
