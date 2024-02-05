@@ -4,6 +4,7 @@ git add nombre_archivo = agregar archivo al staging, está en memoria pero no co
 git add . = lo mismo que el anterior, pero agrega todos los archivos de la carpeta actual
 git commit -m "comentario" = confirma los cambios que están en staging y les deja ese comentario
 git commit = abre el editor de linux "bi" y se debe agregar un comentario en la primera linea y luego se confirman los cambios con ESC + SHIFT + Z Z (dos veces Z)
+git commit -am "comentario" = realiza el git add y git commit al mismo tiempo y coloca el comentario.
 git log = muestra los metadatos de los commit que se han hecho.
 git log nombre_archivo = lo mismo que el anterior pero de un archivo
 git log --stat = muestra un resumen de todos los cambios
@@ -13,8 +14,8 @@ git diff = muestra las diferencias de staging con lo que está confirmado en dis
 git reset id_commit --hard = deja el repositorio como se encontraba en la versión del id_commit
 git checkout id_commit nombre_archivo = me deja seleccionado el archivo nombre_archivo en la versión que escogí en el id_commit. Es decir es para saltar entre versiones
 git checkout master nombre_archivo = me deja el archivo con la última versión realizada
-git reset --soft: Borra el historial y los registros de Git de commits anteriores, pero guarda los cambios en Staging para aplicar las últimas actualizaciones a un nuevo commit.
-git reset --hard: Deshace todo, absolutamente todo. Toda la información de los commits y del área de staging se elimina del historial.
-git reset --mixed: Borra todo, exactamente todo. Toda la información de los commits y del área de staging se elimina del historial.
-git reset HEAD: El comando git reset saca archivos del área de staging sin borrarlos ni realizar otras acciones. Esto impide que los últimos cambios en estos archivos se envíen al último commit. Podemos incluirlos de nuevo en staging con git add si cambiamos de opinión.
-git push: Mandar cambios a un servidor remoto
+git reset --soft = Borra el historial y los registros de Git de commits anteriores, pero guarda los cambios en Staging para aplicar las últimas actualizaciones a un nuevo commit.
+git reset --hard = Deshace todo, absolutamente todo. Toda la información de los commits y del área de staging se elimina del historial.
+git reset --mixed = Borra todo, exactamente todo. Toda la información de los commits y del área de staging se elimina del historial.
+git reset HEAD = El comando git reset saca archivos del área de staging sin borrarlos ni realizar otras acciones. Esto impide que los últimos cambios en estos archivos se envíen al último commit. Podemos incluirlos de nuevo en staging con git add si cambiamos de opinión.
+git push = Mandar cambios a un servidor remoto
