@@ -35,3 +35,7 @@ git pull origin main --allow-unrelated-histories = permite hacer lo anterior for
 Desde github puedo ver toda la historia y puedo hacer los cambios que quiera y hacer de nuevo un git pull para traer los cambios al local.
 git log --all -graph --decorate --oneline = este comando sirve para visualizar la trazabilidad de todos los commits más fácilmente, con los branch que se han creado.
 git tag -a v0.1 -m "Primera versión" id_commit = Esto es para definir la primera versión completa de un proyecto.
+git tag = muestra todos los tags realizados.
+git show-ref --tags = muestra los tags con sus id_commit.
+------Nota----
+Una buena práctica antes de hacer un push es hacer un pull, ya que si se realizaron cambios en Internet se traen primero al local y luego ahí si se realiza el push para que todo esté igual.
