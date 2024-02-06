@@ -39,3 +39,7 @@ git tag = muestra todos los tags realizados.
 git show-ref --tags = muestra los tags con sus id_commit.
 ------Nota----
 Una buena práctica antes de hacer un push es hacer un pull, ya que si se realizaron cambios en Internet se traen primero al local y luego ahí si se realiza el push para que todo esté igual.
+--------------
+git push origin --tags = este comando manda los tags creados a github.
+git tag -d nombre_tag = Esto es para borrar tags en local.
+git push origin :refs/tags/nombre_tag = Esto es para actualizar el borrado del tag nombre_tag en Internet.
