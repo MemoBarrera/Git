@@ -30,7 +30,7 @@ git branch -m main = renombrar la rama master por main.
 git remote add origin ruta_ssh_de_github = esto sirve para conectar la el repositorio remoto a nuestro entorno local con el nombre origin.
 git remote -v = para ver las conexiones remotas.
 git push origin main = sirve para colocar lo que está en main en el origen (repositorio remoto), pero primero se debe hacer un fetch o pull
-git pull origin main = para traer el repositorio creado en github a la rama main de nuestro entorno local.
+git pull origin nombre_rama = para traer el repositorio creado en github a la rama nombre_rama de nuestro entorno local.
 git pull origin main --allow-unrelated-histories = permite hacer lo anterior forzando a mezclar las historias de los repositorios.
 Desde github puedo ver toda la historia y puedo hacer los cambios que quiera y hacer de nuevo un git pull para traer los cambios al local.
 git log --all -graph --decorate --oneline = este comando sirve para visualizar la trazabilidad de todos los commits más fácilmente, con los branch que se han creado.
@@ -43,3 +43,6 @@ Una buena práctica antes de hacer un push es hacer un pull, ya que si se realiz
 git push origin --tags = este comando manda los tags creados a github.
 git tag -d nombre_tag = Esto es para borrar tags en local.
 git push origin :refs/tags/nombre_tag = Esto es para actualizar el borrado del tag nombre_tag en Internet.
+-----Clonar repositorio-----
+Para clonar el repositorio es necesario crear una carpeta nueva vacía y adentro de esta carpeta ejecutar el comando
+git clon ruta_ssh_de_github = este comando permite clonar un proyecto desde github la ruta_ssh_de_github hace referencia a la ruta del proyecto.
