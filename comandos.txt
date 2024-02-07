@@ -45,4 +45,4 @@ git tag -d nombre_tag = Esto es para borrar tags en local.
 git push origin :refs/tags/nombre_tag = Esto es para actualizar el borrado del tag nombre_tag en Internet.
 -----Clonar repositorio-----
 Para clonar el repositorio es necesario crear una carpeta nueva vacía y adentro de esta carpeta ejecutar el comando
-git clon ruta_ssh_de_github = este comando permite clonar un proyecto desde github la ruta_ssh_de_github hace referencia a la ruta del proyecto.
+git clone ruta_ssh_de_github = este comando permite clonar un proyecto desde github la ruta_ssh_de_github hace referencia a la ruta del proyecto.
