@@ -46,3 +46,11 @@ git push origin :refs/tags/nombre_tag = Esto es para actualizar el borrado del t
 -----Clonar repositorio-----
 Para clonar el repositorio es necesario crear una carpeta nueva vacía y adentro de esta carpeta ejecutar el comando
 git clone ruta_ssh_de_github = este comando permite clonar un proyecto desde github la ruta_ssh_de_github hace referencia a la ruta del proyecto.
+------copias en github----
+Para hacer copias de proyectos y poder colaborar sin necesidad de ser colaborador en github, se debe realizar un FORK del proyecto que se quiere, esto va a traer todo el proyecto a nuestro repositorio,
+luego se debe clonar el proyecto de nuestro repositorio y para mantenerlo actualizado se crea un "git remote add origin ruta_ssh_de_github" del proyecto original y realizar "git pull" para traer los cambios
+más recientes y luego hacer un "git push" a nuestro repositorio para que estén sincronizados y si se quiere colaborar se realizan los cambios, s suben a nuestro repositorio y luego se hace
+un pull request al dueño del proyecto original con el fin de que haga la revisión y acepte o rechace los cambios.
+------ignorar archivos en git-------
+Para ignorar archivos que no queremos que suban a nuestro repositorio se debe crear un archivo llamado ".gitignore" allí se colocaran los nombres o extensiones de archivos que se van a ignorar 
+ej. (*.jpg - todos los archivos que estén en ese proyecto y que sean de formato jpg).
