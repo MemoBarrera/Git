@@ -58,3 +58,7 @@ ej. (*.jpg - todos los archivos que estén en ese proyecto y que sean de formato
 Para editar el README.md es bueno guiarse por los proyectos Open Source como laravel y para editar se puede en la página https://pandao.github.io/editor.md/en.html
 ------GITHUB Pages-------
 Se puede simular un dominio para un proyecto con GITHUB Pages, se revisa la configuración y ya se ingresa a username.github.io (teniendo en cuenta que username es de cada quien).
+git rebase nombre_rama = este comando sirve para unir toda la historia de una rama a donde estoy parado, ESTO ES UNA MALA PRÁCTICA, y si se utiliza debe ser en local, no debe subir al remoto,
+lo primero que se hace es crear una branch, pasarse a esa branch, hacer los cambios y commits respectivos, cuando esté listo se debe hacer un "git rebase main" para unir la historia del main a la branch
+y es como si se hubiera acabado de crear la branch, luego se debe pasar a la rama main y se debe hacer el rebase a la rama creada y luego se borra la rama que creamos para hacer los cambios y listo
+se hace de cuenta que no pasó nada y que los cambios se hicieron en el main. ESTO ES UNA MALA PRÁCTICA.
