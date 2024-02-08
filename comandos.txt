@@ -33,7 +33,7 @@ git push origin nombre_rama = sirve para colocar lo que está en la rama nombre_
 git pull origin nombre_rama = para traer el repositorio creado en github a la rama nombre_rama de nuestro entorno local.
 git pull origin main --allow-unrelated-histories = permite hacer lo anterior forzando a mezclar las historias de los repositorios.
 Desde github puedo ver toda la historia y puedo hacer los cambios que quiera y hacer de nuevo un git pull para traer los cambios al local.
-git log --all -graph --decorate --oneline = este comando sirve para visualizar la trazabilidad de todos los commits más fácilmente, con los branch que se han creado.
+git log --all --graph --decorate --oneline = este comando sirve para visualizar la trazabilidad de todos los commits más fácilmente, con los branch que se han creado.
 git tag -a v0.1 -m "Primera versión" id_commit = Esto es para definir la primera versión completa de un proyecto.
 git tag = muestra todos los tags realizados.
 git show-ref --tags = muestra los tags con sus id_commit.
