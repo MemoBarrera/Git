@@ -54,3 +54,7 @@ un pull request al dueño del proyecto original con el fin de que haga la revisi
 ------ignorar archivos en git-------
 Para ignorar archivos que no queremos que suban a nuestro repositorio se debe crear un archivo llamado ".gitignore" allí se colocaran los nombres o extensiones de archivos que se van a ignorar 
 ej. (*.jpg - todos los archivos que estén en ese proyecto y que sean de formato jpg).
+------README.md----------
+Para editar el README.md es bueno guiarse por los proyectos Open Source como laravel y para editar se puede en la página https://pandao.github.io/editor.md/en.html
+------GITHUB Pages-------
+Se puede simular un dominio para un proyecto con GITHUB Pages, se revisa la configuración y ya se ingresa a username.github.io (teniendo en cuenta que username es de cada quien).
