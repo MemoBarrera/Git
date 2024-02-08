@@ -62,3 +62,4 @@ git rebase nombre_rama = este comando sirve para unir toda la historia de una ra
 lo primero que se hace es crear una branch, pasarse a esa branch, hacer los cambios y commits respectivos, cuando esté listo se debe hacer un "git rebase main" para unir la historia del main a la branch
 y es como si se hubiera acabado de crear la branch, luego se debe pasar a la rama main y se debe hacer el rebase a la rama creada y luego se borra la rama que creamos para hacer los cambios y listo
 se hace de cuenta que no pasó nada y que los cambios se hicieron en el main. ESTO ES UNA MALA PRÁCTICA.
+----esta linea se hace con la branch main.
