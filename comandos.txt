@@ -68,3 +68,4 @@ git stash = este comando ayuda a guardar los cambios que no se les ha hecho git 
 git stash pop = este comando se debe realizar en la rama donde se hizo el git stash ya que si se hace en otro lugar puede generar inconvenientes. Este comando libera el stash y vuelve los cambios como estaban si guardar.
 git stash branch nombre_rama = esta se hace despues de git stash y sirve para guardar los cambios nuevos en una nueva rama
 git stash drop = borra los tash que estén en git stash list.
+git stash list = muestra los stash en memoria.
