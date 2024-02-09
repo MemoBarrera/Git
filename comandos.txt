@@ -66,3 +66,4 @@ se hace de cuenta que no pasó nada y que los cambios se hicieron en el main. ES
 ------esta linea se hizo en la branch exp
 git stash = este comando ayuda a guardar los cambios que no se les ha hecho git add y así poder moverme entre ramas sin tener que hacer commit, es decir que guarda los cambios en una sección especial. Adicional a esto también vuelve a la versión de último commit hecho.
 git stash pop = este comando se debe realizar en la rama donde se hizo el git stash ya que si se hace en otro lugar puede generar inconvenientes. Este comando libera el stash y vuelve los cambios como estaban si guardar.
+git stash branch nombre_rama = esta se hace despues de git stash y sirve para guardar los cambios nuevos en una nueva rama
