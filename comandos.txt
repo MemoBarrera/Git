@@ -75,3 +75,17 @@ git cherry-pick id_commit = este comando sirve para hacer un merge con un commit
 git reflog = muestra un git log pero completo.
 gitk = abre un programa propio de git que muestra los logs mas bonitos.
 git commit --amend =  se utiliza cuando se realiza un commit y se olvida agregar algo que debía ir en ese commit, es decir agrega los últimos cambios relizados al commit anterior sin crear uno nuevo. Pero primero se debe hacer un git add nombre_archivo para que esto funcione.
+git grep palabra_a_buscar = este comando sirve para filtrar en todos los archivos la palabra palabra_a_buscar y me aparecerá. si es una etiqueta html se debe hacer entre comillas dobles.
+git grep -n palabra_a_buscar = esto me devuelve la linea donde está esta palabra_a_buscar.
+git grep -c palabra_a_buscar = esta me cuenta las veces que aparece esa palabra_a_buscar en cada archivo.
+git log -S palabra_a_buscar = esto hace lo mismo que el grep pero lo hace en los detalles de los commits.
+git shortlog = me muestra todos los commit por usuario.
+git shortlog -sn = la cuenta de los commits por usuario.
+git shortlog -sn --all --no-merges = esto me muestra la cuenta de todos los commits por usuario incluidos los eliminados y excluidos los hechos con merge.
+-------configuración de comandos---------
+Los comandos se pueden configurar creando alias, ejemplo
+git config --global alias.stats "shortlog -sn --all --no-merges" (Aquí estoy renombrando el comando que está entre comillas por stats), ahora puedo ejecutar en mi consola GIT STATS y me va a hacer lo mismo que git shortlog -sn --all --no-merges.
+git blame nombre_archivo = este comando ayuda a ver linea por liena quién realizó el cambio.
+git blame nombre_archivo -L1,10 = hace lo mismo que el comando anterior pero en el rango de lineas 1 a la 10.
+git branch -r = ver las ramas del repositorio remoto.
+git branch -a = ver todas las ramas.
