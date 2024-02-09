@@ -89,3 +89,4 @@ git blame nombre_archivo = este comando ayuda a ver linea por liena quién reali
 git blame nombre_archivo -L1,10 = hace lo mismo que el comando anterior pero en el rango de lineas 1 a la 10.
 git branch -r = ver las ramas del repositorio remoto.
 git branch -a = ver todas las ramas.
+gitk = abre un programa propio de git que muestra los logs mas bonitos.
