@@ -72,3 +72,6 @@ git stash list = muestra los stash en memoria.
 git clean --dry-run = muestra los archivos que se van a eliminar, si por error se crearon archivos basura, este comando me ayuda a previsualizar los archivos que se van a borrar.
 git clean -f = fuerza el borrado de los archivos que se previsualizaron con el comando git clean --dry-run, excluyendo los que estén en .gitignore
 git cherry-pick id_commit = este comando sirve para hacer un merge con un commit específico de otra rama, ESTO ES UNA MALA PRÁCTICA, por lo general la forma correcta de hacer esto es con git checkout al commit que quiero fusionar y luego hacer un git merge donde se requiera y volver al git checkout último commit. ESTO ES UNA MALA PRÁCTICA.
+git reflog = muestra un git log pero completo.
+gitk = abre un programa propio de git que muestra los logs mas bonitos.
+git commit --amend =  se utiliza cuando se realiza un commit y se olvida agregar algo que debía ir en ese commit, es decir agrega los últimos cambios relizados al commit anterior sin crear uno nuevo. Pero primero se debe hacer un git add nombre_archivo para que esto funcione.
