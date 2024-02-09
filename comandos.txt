@@ -69,3 +69,6 @@ git stash pop = este comando se debe realizar en la rama donde se hizo el git st
 git stash branch nombre_rama = esta se hace despues de git stash y sirve para guardar los cambios nuevos en una nueva rama
 git stash drop = borra los tash que estén en git stash list.
 git stash list = muestra los stash en memoria.
+git clean --dry-run = muestra los archivos que se van a eliminar, si por error se crearon archivos basura, este comando me ayuda a previsualizar los archivos que se van a borrar.
+git clean -f = fuerza el borrado de los archivos que se previsualizaron con el comando git clean --dry-run, excluyendo los que estén en .gitignore
+git cherry-pick id_commit = este comando sirve para hacer un merge con un commit específico de otra rama, ESTO ES UNA MALA PRÁCTICA, por lo general la forma correcta de hacer esto es con git checkout al commit que quiero fusionar y luego hacer un git merge donde se requiera y volver al git checkout último commit. ESTO ES UNA MALA PRÁCTICA.
